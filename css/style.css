@@ -1,0 +1,11 @@
+body {
+  background-color: #ffffee;
+}
+
+#user-input {
+  margin-bottom: 35px;
+}
+
+.table > thead {
+  background-color: #eee;
+}
