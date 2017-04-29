@@ -11,6 +11,9 @@ $(document).ready(function() {
   var number = random4Digit();
   console.log(number);
 
+  var source   = $("#table-template").html();
+  var template = Handlebars.compile(source);
+
   $('#user-input').on('keyup', function(e) {
     if (e.which == 13) {
 
@@ -33,7 +36,11 @@ $(document).ready(function() {
           }
         }
 
+        var context = {number: userInput, picas: picas, fijas: fijas};
+        var html    = template(context);
+
         if (fijas !== 4) {
+          $('tbody').prepend(html)
           $(this).val('');
         } else {
           alert('ganaste');

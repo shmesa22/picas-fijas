@@ -38,7 +38,13 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-  <script src="js/template.js"></script>
+  <script id="table-template" type="text/x-handlebars-template">
+    <tr>
+      <td>{{ number }}</td>
+      <td>{{ picas }}</td>
+      <td>{{ fijas }}</td>
+    </tr>
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
