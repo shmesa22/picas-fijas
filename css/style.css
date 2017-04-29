@@ -9,3 +9,11 @@ body {
 .table > thead {
   background-color: #eee;
 }
+
+.error {
+  color: #F09690;
+}
+
+.input-error {
+  background-color: #F09690;
+} 
