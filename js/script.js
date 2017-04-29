@@ -43,7 +43,9 @@ $(document).ready(function() {
           $('tbody').prepend(html)
           $(this).val('');
         } else {
-          alert('ganaste');
+          $('.no-show').show();
+          $('.no-show').parent().addClass('center');
+          $('#win').addClass('win');
         }
 
       } else {
@@ -55,5 +57,9 @@ $(document).ready(function() {
       }
 
     }
+  });
+
+  $('.btn').on('click', function() {
+    location.reload();
   });
 });

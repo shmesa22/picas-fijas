@@ -1,5 +1,11 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   background-color: #ffffee;
+  height: 100%;
 }
 
 #user-input {
@@ -16,4 +22,37 @@ body {
 
 .input-error {
   background-color: #F09690;
-} 
+}
+
+.no-show {
+  display: none;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.celebrate {
+  font-size: 12rem;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.win {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
